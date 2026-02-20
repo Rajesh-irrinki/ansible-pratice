@@ -1,0 +1,25 @@
+---
+Students:
+  - name: Rajesh irrinki
+    DOB: "05-10-2000"
+    Addresses:
+    - currentAddress:
+      - Flat_No: 101
+        Appartment_name: Ramaniyam Waterfront
+        City: Chennai
+    - permanentAddress:
+      - Flat_No: '6-7/1'
+        Appartment_name: Balaji Towers
+        City: Bhimavaram
+  - name: Chandra Sekhar
+    DOB: "23-11-2004"
+    Addresses:
+    - currentAddress: 
+      - Flat_No: 405
+        Appartment_name: Hyma Ramachandra
+        City: Vijayawada
+    - permanentAddress:
+      - Flat_No: 4E
+        Appartment_name: Sai Bhavan
+        City: Bhimavaram
+      

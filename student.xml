@@ -1,0 +1,36 @@
+<!-- Students Details Form -->
+
+<Students> 
+    <Name> Rajesh irrinki </Name>
+    <DOB> 05/10/2000 </DOB>
+    <Adresses> 
+        <Current_Address> 
+            <Flat_NO> 4E </Flat_NO>
+            <Appartment_name> Ramaniyam Water front </Appartment_name>
+            <City> Chennai </City>
+        </Current_Address>
+
+        <Permanent_Address> 
+            <Flat_NO> 6-7/1 </Flat_NO>
+            <Appartment_name> Sri Sai Towers </Appartment_name>
+            <City> Bhimavaram </City>
+        </Permanent_Address>
+    </Adresses>
+
+    <Name> Chandra Sekhar </Name>
+    <DOB> 23/11/2004 </DOB>
+    <Adresses> 
+        <Current_Address> 
+            <Flat_NO> 101 </Flat_NO>
+            <Appartment_name> Balaji Towers </Appartment_name>
+            <City> Bangalore </City>
+        </Current_Address>
+
+        <Permanent_Address> 
+            <Flat_NO> 400 </Flat_NO>
+            <Appartment_name> Aplha city </Appartment_name>
+            <City> Chennai </City>
+        </Permanent_Address>
+    </Adresses>
+
+</Students>

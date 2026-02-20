@@ -1,0 +1,41 @@
+{
+    "students": [
+        {
+            "Name": "rajesh irrinki",
+            "DOB": "05-10-2000",
+            "addresses":[
+                {
+                    "Flat_No": "4E",
+                    "Appartment_name": "Ramaniyam Water front",
+                    "City": "Chennai",
+                    "Address_type": "Current"
+                },
+                {
+                    "Flat_No": "6-7/1",
+                    "Appartment_name": "Sai balaji Towers",
+                    "City": "Bhimavaram",
+                    "Address_type": "Permanent"
+                }
+            ]
+            
+        },
+        {
+            "Name": "Chandra Sekhar",
+            "DOB": "23-11-2004",
+            "addresses":[
+                {
+                    "Flat": 104,
+                    "Appartment_name": "Hyma Ramachandra",
+                    "city": "Vijayawada",
+                    "Address_type": "Current"
+                },
+                {
+                    "Flat": 201,
+                    "Appartment_name": "Krishna Bhavan",
+                    "city": "ELURU",
+                    "Address_type": "Permanent"
+                }
+            ]
+        }
+    ]
+}
