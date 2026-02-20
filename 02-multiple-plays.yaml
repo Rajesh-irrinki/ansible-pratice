@@ -1,0 +1,17 @@
+- name: Play1
+  hosts: web
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: "Play1 : Ansible is Configuration Management tool !!"
+
+- name: Play2
+  hosts: web
+  tasks:
+  - name: Ping
+    ansible.builtin.ping:
+
+  - name: Print message
+    anisble.builtin.debug:
+      msg: "Play2: Hello World !!"
+      
