@@ -6,7 +6,8 @@
       msg: "Play1 : Ansible is Configuration Management tool !!"
 
 - name: Play2
-  hosts: web
+  hosts: local
+  connection: local
   tasks:
   - name: Ping
     ansible.builtin.ping:
