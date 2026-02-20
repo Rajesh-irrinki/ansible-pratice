@@ -1,7 +1,9 @@
-- name: Hello World
-  hosts: localhost
-  connection: local
+- name: My first play
+  hosts: web
   tasks:
-  - name: Print Hello World
-    ansible.builtin.debug:
-      msg: "Hello World !!"
+   - name: Ping my hosts
+     ansible.builtin.ping:
+
+   - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
