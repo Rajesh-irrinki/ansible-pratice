@@ -12,6 +12,5 @@
     ansible.builtin.ping:
 
   - name: Print message
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "Play2: Hello World !!"
-      
