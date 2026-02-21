@@ -11,12 +11,13 @@
   - details.yaml
   tasks:
   - name: Print variable value
-    vars:
-      varName: "This is from Task"
+    # vars:
+    #   varName: "This is from Task"
     ansible.builtin.debug:
       msg: "{{varName}}"
 
       #### prefrence ######
+      # 1. Task variable
       # 1. Arguements
       # 2. From file
       # 3. From prompt
