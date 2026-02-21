@@ -11,6 +11,7 @@
       Name: Rajesh
     ansible.builtin.debug:
       msg: "My name is {{Name}}, Currently working as {{Designation}}"
+    ansible.builtin.debug:
       msg: "Task variable (Name) overwritten the variable from file"
     
     
