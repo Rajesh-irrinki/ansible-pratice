@@ -7,9 +7,14 @@
   - name: varName
     prompt: "Enter the value for variable"
     private: false
-  vars_files:
-  - details.yaml
+  # vars_files:
+  # - details.yaml
   tasks:
   - name: Print variable value
     ansible.builtin.debug:
       msg: "{{varName}}"
+
+      #### prefrence ######
+      1. Arguements
+      2. From file
+
