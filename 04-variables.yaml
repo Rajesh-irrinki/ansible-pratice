@@ -1,0 +1,9 @@
+- name: Variables Handling
+  hosts: web
+  vars:
+  - Name: Rajeshirrinki
+    Designation: Senior System Engineer
+  tasks:
+  - name: Print variables
+    ansible.builtin.debug:
+      msg: "My Name is {{ Name}}, Currently working as {{Designation}}"
