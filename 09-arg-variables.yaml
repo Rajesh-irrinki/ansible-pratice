@@ -1,0 +1,6 @@
+- name: Handling Arguement variables
+  hosts: web
+  tasks:
+  - name: Print aruguements
+    ansible.builitin.debug:
+      msg: "My name is {{Name}}, Currently working as {{Designation}}"
