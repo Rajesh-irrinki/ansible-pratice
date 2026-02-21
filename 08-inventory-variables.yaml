@@ -1,0 +1,6 @@
+- name: Inventory variables
+  hosts: web
+  tasks:
+  - name: Print variables from Inventory
+    ansible.builtin.debug:
+      msg: "My name is {{Name}}, currently working as {{Designation}}"

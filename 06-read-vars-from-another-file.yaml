@@ -1,4 +1,4 @@
-- name: Play level variables
+- name: File variables
   hosts: web
   vars_files:
   - details.yaml
