@@ -7,7 +7,7 @@
   - name: varName
     prompt: "Enter the value for variable"
     private: false
-  vars_file:
+  vars_files:
   - details.yaml
   tasks:
   - name: Print variable value
