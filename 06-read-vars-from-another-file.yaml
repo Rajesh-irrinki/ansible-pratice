@@ -1,6 +1,6 @@
 - name: Play level variables
   hosts: web
-  vars:
+  vars_files:
   - details.yaml
   tasks:
   - name: Ping the host
