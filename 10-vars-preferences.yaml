@@ -1,16 +1,18 @@
 - name: Verifying variable preferences
   hosts: local
   connection: local
-  # vars:
-  # - varName: "This is Play level variable"
-  # vars_prompt:
-  # - name: varName
-  #   prompt: "Enter the value for variable"
-  #   private: false
-  # vars_files:
-  # - details.yaml
+  vars:
+  - varName: "This is Play level variable"
+  vars_prompt:
+  - name: varName
+    prompt: "Enter the value for variable"
+    private: false
+  vars_files:
+  - details.yaml
   tasks:
   - name: Print variable value
+    vars:
+      varName: "This is from Task"
     ansible.builtin.debug:
       msg: "{{varName}}"
 
@@ -19,5 +21,6 @@
       # 2. From file
       # 3. From prompt
       # 4. Play level 
+      # 5. Inventory file
 
 
