@@ -5,12 +5,12 @@
   - Name: Rajeshirrinki ## String
     Age: 24 # int
     Graduate: true #boolean
-    Skills:
+    Skills:  #List
     - Linux
       K8s
       Docker
       Ansible
-    Address:
+    Address: #Map/Dictionary
     - current: {Flat_No: 4E, Appartment_Name: Ramaniyam Water front, City: Chennai}
       permanent: {Flat_No: 101, Appartment_Name: Sai Towers, City: Bhimavaram}
   tasks:
