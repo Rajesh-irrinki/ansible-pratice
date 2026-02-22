@@ -32,4 +32,7 @@
 
   - name: ready students yaml
     ansible.builtin.set_fact:
-      "student.yaml | {{ lookup ('file', 'student.yaml') | from_yaml}}"
+      " student_yaml | {{ lookup ('file', 'student.yaml') | from_yaml }}"
+  
+  - name: Convert yaml to json
+      "{{ student_yaml | to_nice_json }}"
