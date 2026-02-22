@@ -1,0 +1,24 @@
+- name: Data types
+  hosts: local
+  connection: local
+  vars:
+  - Name: Rajeshirrinki ## String
+    Age: 24 # int
+    Graduate: true #boolean
+    Skills:
+    - Linux
+      K8s
+      Docker
+      Ansible
+    Address:
+    - current: {Flat_No: 4E, Appartment_Name: Ramaniyam Water front, City: Chennai}
+      permanent: {Flat_No: 101, Appartment_Name: Sai Towers, City: Bhimavaram}
+  tasks:
+  - name: print Variables
+    ansible.builtin.debug:
+      msg: |
+      - {{Name}}
+        {{Age}}
+        {{Graduate}}
+        {{Skills}}
+        {{Address}}
