@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: Command usage
-    ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.command: cat /etc/passwd ## In command, redirections and grep won't work
     register: command_output
 
   - name: Print Command output
@@ -12,7 +12,7 @@
       msg: "{{command_output}}"
   
   - name: Shell usage
-    ansible.builtin.shell: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root # In shell, we can use grep and redirections
     register: shell_output
   - name: print shell output
     ansible.builtin.debug:
