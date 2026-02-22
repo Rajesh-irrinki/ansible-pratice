@@ -2,21 +2,18 @@
   hosts: local
   connection: local
   become: yes
-  vars:
-    output: ""
   tasks:
   - name: Command usage
-    ansible.builtin.command:
-      output = cat /etc/passwd
-    
+    ansible.builtin.command: cat /etc/passwd
+    registers: command_output
+
   - name: Print Command output
     ansible.builtin.debug:
-      msg: "{{output}}"
+      msg: "{{command_output}}"
   
   - name: Shell usage
-    ansible.builtin.shell:
-      output = cat /etc/passwd | grep root
-  
+    ansible.builtin.shell: cat /etc/passwd | grep root
+    registers: shell_output
   - name: print shell output
     ansible.builtin.debug:
-      msg: "{{output}}"
+      msg: "{{shell_output}}"
