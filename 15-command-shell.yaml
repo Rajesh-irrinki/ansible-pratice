@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    output
+    output: ""
   tasks:
   - name: Command usage
     ansible.builtin.command:
