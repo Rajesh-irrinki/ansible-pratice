@@ -1,7 +1,7 @@
 - name: command and shell usage
   hosts: local
   connection: local
-  become: yes
+  become: no
   tasks:
   - name: Command usage
     ansible.builtin.command: cat /etc/passwd ## In command, redirections and grep won't work
