@@ -45,3 +45,7 @@
   - name: print in lower case
     ansible.builtin.debug:
       msg: "{{currentDesignation | lower}}"
+  
+  - name: check IPv4
+    ansible.builtin.debug:
+      msg: "{{myIp | ansible.utils.ipv4}}"
