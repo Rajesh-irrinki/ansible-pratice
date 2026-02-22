@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    Skills: Linux, Ansible, shell, K8s, docker
+    Skills: Linux,Ansible,Shell,K8s,Docker
     Designation: "Senior System Engineer"
     myIp: 172.11.64.22
     Address:
@@ -19,9 +19,12 @@
   tasks:
   - name: Greeting
     ansible.builtin.debug:
-      msg: "Hi there!,{{GREETING | default('How are you') }} "
+      msg: "Hi there!,{{ GREETING | default('How are you') }} "
 
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "{{Skills | split (',')}}"
-    
+      msg: "{{ Skills | split (',')}}"
+  
+  - name: Convert Map to list
+    ansible.builtin.debug:
+      msg: "{{ Address | dict2items }}"    
