@@ -5,7 +5,7 @@
   tasks:
   - name: Command usage
     ansible.builtin.command: cat /etc/passwd
-    registers: command_output
+    register: command_output
 
   - name: Print Command output
     ansible.builtin.debug:
@@ -13,7 +13,7 @@
   
   - name: Shell usage
     ansible.builtin.shell: cat /etc/passwd | grep root
-    registers: shell_output
+    register: shell_output
   - name: print shell output
     ansible.builtin.debug:
       msg: "{{shell_output}}"
