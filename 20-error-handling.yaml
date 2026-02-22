@@ -12,8 +12,8 @@
     ansible.builtin.debug:
       msg: "{{ command_output }}"
 
-  - name: Create user
-    ansible.builtin.commad: "useradd roboshop"
+  - name: user add
+    ansible.builtin.command: "useradd --system --home /app --shell /sbin/nologin roboshop"
     register: "command_output"
     when: command_output.rc != 0
 
