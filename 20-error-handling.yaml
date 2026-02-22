@@ -6,7 +6,8 @@
   - name: read user id
     ansible.builtin.command: "id -u roboshop"
     register: command_output
-  
+    ignore_error: true
+
   - name: print user id
     ansible.builtin.debug:
       msg: "{{ command_output }}"
