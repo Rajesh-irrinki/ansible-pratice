@@ -1,0 +1,14 @@
+- name: Check whether given number is greater than
+  hosts: local
+  connection: local
+  vars:
+    Number1: 10
+  vars_prompt:
+  - name: Number2
+    prompt: "Enter the Number"
+    private: false
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: "{{Number2}} is greater than {{Number1}}"
+    when: Number2 > Number1
