@@ -31,5 +31,5 @@
       msg: "{{ workedAs | items2dict }}" 
 
   - name: ready students yaml
-    ansible.buitin.set_fact:
+    ansible.builtin.set_fact:
       "student.yaml | {{ lookup ('file', 'student.yaml') | from_yaml}}"
