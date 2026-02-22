@@ -10,5 +10,5 @@
   tasks:
   - name: Print message
     ansible.builtin.debug:
-      msg: "Given Number:{{Number2}} is greater than Number1:{{Number1}}"
+      msg: "Given Number: {{Number2}} is greater than Number1: {{Number1}}"
     when: Number2 | int > Number1 
