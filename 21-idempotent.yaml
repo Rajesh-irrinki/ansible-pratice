@@ -1,0 +1,11 @@
+- name: Idempotent
+  hosts: local
+  connection: local
+  tasks:
+  - name: user add
+    ansible.builtin.user:
+      name: roboshop
+      home: /app
+      shell: /sbin/nologin
+      state: present
+      system: true
