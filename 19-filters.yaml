@@ -40,8 +40,8 @@
   
   - name: Print in Upper case
     ansible.builtin.debug:
-      msg: "currentDesignation | upper"
+      msg: "{{currentDesignation | upper}}"
   
   - name: print in lower case
     ansible.builtin.debug:
-      msg: "currentDesignation | lower"
+      msg: "{{currentDesignation | lower}}"
