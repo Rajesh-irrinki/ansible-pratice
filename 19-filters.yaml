@@ -23,5 +23,5 @@
 
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "{{Designation | split (',')}}"
+      msg: "{{Skills | split (',')}}"
     
