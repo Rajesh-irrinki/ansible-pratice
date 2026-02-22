@@ -30,5 +30,5 @@
       msg: "{{ Address | dict2items }}"
 
   - name:  Convert List to Map
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "{{ Friends | items2dict }}" 
