@@ -1,4 +1,4 @@
-- name: Variables Handling
+- name: Play level Variables Handling
   hosts: web
   vars:
   - Name: Rajeshirrinki
