@@ -14,6 +14,7 @@
   - name: Shell usage
     ansible.builtin.shell: cat /etc/passwd | grep root # In shell, we can use grep and redirections
     register: shell_output
+    
   - name: print shell output
     ansible.builtin.debug:
       msg: "{{shell_output}}"
