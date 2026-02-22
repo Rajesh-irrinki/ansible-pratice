@@ -3,19 +3,16 @@
   connection: local
   vars:
     Skills: Linux,Ansible,Shell,K8s,Docker
-    Designation: "Senior System Engineer"
+    currentDesignation: "Senior System Engineer"
     myIp: 172.11.64.22
     Address:
       Flat: 4E
       Appartment: Ramaniyam
       city: Chennai
-    Friends:
+    workedAs:
       [
-      { "key": "Name", "value": "param" },
-      { "key": "Name", "value": "Mani" },
-      { "key": "Name", "value": "Poojitha" },
-      { "key": "Name", "value": "Jagadeesh" },
-      { "key": "Name", "value": "Jai" } ]
+      { "key": "Nokia", "value": "Solution Engineer" },
+      { "key": "Infinite", "value": "Senior System Engineer" } ]
   tasks:
   - name: Greeting
     ansible.builtin.debug:
@@ -31,4 +28,4 @@
 
   - name:  Convert List to Map
     ansible.builtin.debug:
-      msg: "{{ Friends | items2dict }}" 
+      msg: "{{ workedAs | items2dict }}" 
