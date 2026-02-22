@@ -11,4 +11,13 @@
   - name: print user id
     ansible.builtin.debug:
       msg: "{{ command_output }}"
+
+  - name: Create user
+    ansible.builtin.commad: "useradd --system --home /app --shell /sbin/nologin roboshop"
+    register: "command_output"
+    when: command_output.rc != 0
+
+  - name: print response
+    ansible.builtin.dedug:
+      msg: "{{command_output}}"
     
