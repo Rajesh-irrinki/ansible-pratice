@@ -14,14 +14,14 @@
     vars:
       varName: "This is from Task"
     ansible.builtin.debug:
-      msg: "{{varName}}"
+      msg: "{{ varName }}"
 
       #### prefrence ######
-      # 1. Task variable
       # 1. Arguements
-      # 2. From file
+      # 2. Task variable
       # 3. From prompt
-      # 4. Play level 
-      # 5. Inventory file
+      # 4. From file
+      # 5. Play level 
+      # 6. Inventory file
 
 
