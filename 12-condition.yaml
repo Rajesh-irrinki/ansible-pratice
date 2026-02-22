@@ -1,0 +1,10 @@
+- name: conditions
+  hosts: local
+  connection: local
+  vars:
+    is_enabled : true
+  tasks:
+  - name: Print message based on condition
+    ansible.builtin.debug:
+      msg: "Logs are enabled"
+    when is_enabled
