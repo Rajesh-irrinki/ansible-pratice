@@ -18,6 +18,6 @@
     when: command_output.rc != 0
 
   - name: print response
-    ansible.builtin.dedug:
+    ansible.builtin.debug:
       msg: "{{command_output}}"
     
