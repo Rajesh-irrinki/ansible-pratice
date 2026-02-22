@@ -10,3 +10,8 @@
       shell: /sbin/nologin
       state: present
       system: true
+    register: print_output
+
+  - name: print response
+    ansible.builtin.debug:
+      msg: "{{ print_output }}"
