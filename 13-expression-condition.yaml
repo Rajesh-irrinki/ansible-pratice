@@ -11,4 +11,4 @@
   - name: Print message
     ansible.builtin.debug:
       msg: "{{Number2}} is greater than {{Number1}}"
-    when: Number2 | int > Number1 | int
+    when: Number2 | int > Number1 
