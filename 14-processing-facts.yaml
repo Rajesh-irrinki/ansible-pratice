@@ -14,4 +14,4 @@
   - name: Print package manager
     ansible.builtin.debug:
       msg: "Distribution is Debian, so use apt package manager"
-    when ansible_facts.distribution == "Debian"
+    when: ansible_facts.distribution == "Debian"
