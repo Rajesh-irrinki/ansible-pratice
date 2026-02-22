@@ -8,4 +8,4 @@
   - name: Print Package manager
     ansible.builtin.debug:
       msg: "use dnf package manager"
-    when: ansible_facts.distribution == RedHat
+    when: ansible_facts.distribution = RedHat
