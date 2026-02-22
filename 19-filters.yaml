@@ -11,11 +11,11 @@
       city: Chennai
     Friends:
       [
-      { Name: param, Age: 25, Gender: Male},
-      { Name: Mani, Age: 26, Gender: Male},
-      { Name: Poojitha, Age: 24, Gender: Female},
-      { Name: Jagadeesh, Age:25, Gender: Male},
-      { Name: Jai, Age: 25, Gender: Male} ]
+      { "key": "Name", "value": "param" },
+      { "key": "Name", "value": "Mani" },
+      { "key": "Name", "value": "Poojitha" },
+      { "key": "Name", "value": "Jagadeesh" },
+      { "key": "Name", "value": "Jai" } ]
   tasks:
   - name: Greeting
     ansible.builtin.debug:
