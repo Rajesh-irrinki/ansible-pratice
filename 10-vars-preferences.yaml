@@ -1,8 +1,8 @@
 - name: Verifying variable preferences
   hosts: local
   connection: local
-  vars:
-  - varName: "This is Play level variable"
+  # vars:
+  # - varName: "This is Play level variable"
   # vars_prompt:
   # - name: varName
   #   prompt: "Enter the value for variable"
