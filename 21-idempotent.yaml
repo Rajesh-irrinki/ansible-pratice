@@ -1,6 +1,7 @@
 - name: Idempotent
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: user add
     ansible.builtin.user:
