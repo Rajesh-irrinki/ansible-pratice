@@ -20,4 +20,5 @@
   - name: print response
     ansible.builtin.debug:
       msg: "{{command_output}}"
+    when: command_output.rc == 0
     
