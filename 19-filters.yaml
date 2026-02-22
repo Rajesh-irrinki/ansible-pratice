@@ -1,0 +1,27 @@
+- name: Filters usage
+  hosts: local
+  connection: local
+  vars:
+    Skills: Linux, Ansible, shell, K8s, docker
+    Designation: "Senior System Engineer"
+    myIp: 172.11.64.22
+    Address:
+      Flat: 4E
+      Appartment: Ramaniyam
+      city: Chennai
+    Friends:
+      [
+      { Name: param, Age: 25, Gender: Male},
+      { Name: Mani, Age: 26, Gender: Male},
+      { Name: Poojitha, Age: 24, Gender: Female},
+      { Name: Jagadeesh, Age:25, Gender: Male},
+      { Name: Jai, Age: 25, Gender: Male} ]
+  tasks:
+  - name: Greeting
+    ansible.builtin.debug:
+      msg: "Hi there!,{{GREETING | default('How are you') }} "
+
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "{{Designation | split (',')}}"
+    
